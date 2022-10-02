@@ -1,76 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login page</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="overlay">
-      <form>
-        <div class="con">
-          <header class="head-form">
-            <h2>Log In</h2>
 
-            <p>Login using your username and password</p>
-          </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login page</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-          <br />
-          <div class="field-set">
+<body>
+  <div class="overlay">
+    <form class="form">
+      <div class="con">
+        <header class="head-form">
+          <h2>Log In</h2>
+
+          <p>Login using your username and password</p>
+        </header>
+
+        <br />
+        <div class="field-set">
+          <div class="input-field">
             <span class="input-item">
-              <i class="fa fa-user-circle"></i>
+              <i class="fa-solid fa-user"></i>
             </span>
-
-            <input
-              class="form-input"
-              id="txt-input"
-              type="text"
-              placeholder="User name"
-              required
-            />
-
-            <br />
-
-            <span class="input-item">
-              <i class="fa fa-key"></i>
-            </span>
-
-            <input
-              class="form-input"
-              type="password"
-              placeholder="Password"
-              id="pwd"
-              name="Password"
-              required
-            />
-
-            <span>
-              <i
-                class="fa fa-eye"
-                aria-hidden="true"
-                type="button"
-                id="eye"
-              ></i>
-            </span>
-
-            <br />
-
-            <button class="log-in">Log In</button>
+            <input class="form-input" id="txt-input" type="text" placeholder="Username" required autocomplete="off" />
           </div>
 
-          <div class="other">
-            <button class="btn submits frgt-pass">Forgot Password</button>
-
-            <button class="btn submits sign-up">
-              Sign Up
-
-              <i class="fa fa-user-plus" aria-hidden="true"></i>
-            </button>
+          <div class="input-field">
+            <span class="input-item">
+              <i class="fa-solid fa-key"></i>
+            </span>
+            <input class="form-input" type="password" placeholder="Password" id="pwd" name="Password" required
+              autocomplete="off" />
           </div>
+
+          <button class="log-in">Log In</button>
         </div>
-      </form>
-    </div>
-  </body>
+
+        <div class="other">
+          <button class="btn-frgtpass">Forgot Password?</button>
+
+          <button class="btn-sign-up">
+            Sign Up &nbsp;<i class="fa fa-user-plus" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="https://kit.fontawesome.com/1b83f7dbef.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

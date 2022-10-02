@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Abel|Abril+Fatface|Alegreya|Arima+Madurai|Dancing+Script|Dosis|Merriweather|Oleo+Script|Overlock|PT+Serif|Pacifico|Playball|Playfair+Display|Share|Unica+One|Vibur");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 * {
   padding: 0;
@@ -6,30 +6,32 @@
   box-sizing: border-box;
 }
 
-body {
+.overlay {
   background-image: linear-gradient(-225deg, #e99a08 0%, #fc09e7 100%);
-  background-image: linear-gradient(to top, #d88940 0%, #df8bb5 100%);
   background-attachment: fixed;
   background-repeat: no-repeat;
-
-  font-family: "Vibur", cursive;
-
-  font-family: "Abel", sans-serif;
+  background-position: center;
+  background-size: cover;
+  font-family: 'Roboto Condensed', sans-serif;
   opacity: 0.95;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
-form {
-  width: 450px;
+.form {
+  max-width: 450px;
+  width: 100%;
   min-height: 500px;
   height: auto;
   border-radius: 5px;
-  margin: 2% auto;
-  box-shadow: 20px 20px 20px hsla(42, 8%, 32%, 0.31);
+  margin: 5% auto;
+  box-shadow: 20px 20px 20px hsl(42deg 8% 32% / 31%);
   padding: 2%;
-  background-image: linear-gradient(-225deg, #d1f1e8 50%, #e6cde3 50%);
+  background-image: linear-gradient(-225deg, #dfbfa1 50%, #df8b8b 50%);
 }
 
-form .con {
+.con {
   display: -webkit-flex;
   display: flex;
 
@@ -42,56 +44,59 @@ form .con {
   margin: 0 auto;
 }
 
-header {
-  margin: 2% auto 10% auto;
+.head-form {
+  margin: 1rem auto 2rem auto;
   text-align: center;
 }
 
-header h2 {
+.head-form h2 {
   font-size: 250%;
-  font-family: "Playfair Display", serif;
+  font-family: 'Roboto Condensed', sans-serif;
   color: #3e403f;
+  margin-bottom: 2rem;
 }
-header p {
+
+.head-form p {
   letter-spacing: 0.05em;
 }
 
 .input-item {
-  background: #fff;
-  color: #333;
-  padding: 14.5px 0px 15px 9px;
-  border-radius: 5px 0px 0px 5px;
+  background-color: #fff;
+  width: 13%;
+  padding: 0.93rem;
+  border-right: 1px solid #c6c1c159;
 }
 
-input[class="form-input"] {
-  width: 250px;
-  height: 50px;
-  margin-top: 2%;
-  padding: 15px;
-  font-size: 16px;
-  font-family: "Abel", sans-serif;
-  color: #5e6472;
+.form-input {
+  width: 87%;
+  padding: 0.98rem;
+  border: none;
+  background-color: #fff;
+  font-size: 0.9rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-input:focus {
   outline: none;
-  border: 0;
-  border-radius: 0px 5px 5px 0px;
-  transition: 0.2s linear;
 }
-input[id="txt-input"] {
-  width: 250px;
+
+.input-field {
+  max-width: 22rem;
+  width: 100%;
+  margin: 1.5rem 0 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
-input:focus {
-  transform: translateX(-2px);
-  border-radius: 5px;
+
+.field-set {
+  max-width: 22rem;
+  width: 100%;
 }
 
 button {
   display: inline-block;
-  color: #252537;
-  width: 250px;
-  height: 50px;
-  padding: 0 20px;
-  background: #fff;
-  border-radius: 5px;
   outline: none;
   border: none;
   cursor: pointer;
@@ -99,23 +104,35 @@ button {
   transition: all 0.2s linear;
   margin: 7% auto;
   letter-spacing: 0.05em;
+  font-family: 'Roboto Condensed', sans-serif;
 }
+
 .log-in {
   width: 100%;
-}
-.submits {
-  width: 48%;
-  display: inline-block;
-  float: left;
-  margin-left: 2%;
-}
-
-.frgt-pass {
-  background: transparent;
+  color: #252537;
+  padding: 0.9rem 1rem;
+  background: #fff;
+  border-radius: 5px;
+  font-size: 0.9rem;
 }
 
-.sign-up {
-  background: #eea765;
+.other {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-frgtpass {
+  background-color: #ffffff2e;
+  padding: 1rem;
+}
+
+.btn-sign-up {
+  background: #ed3535;
+  color: #fff;
+  padding: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 button:hover {
@@ -126,10 +143,12 @@ button:hover {
 button:hover {
   animation: ani9 0.4s ease-in-out infinite alternate;
 }
+
 @keyframes ani9 {
   0% {
     transform: translateY(3px);
   }
+
   100% {
     transform: translateY(5px);
   }
