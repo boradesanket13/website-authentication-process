@@ -117,8 +117,14 @@ button {
   color: #252537;
   padding: 0.9rem 1rem;
   background: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 0.9rem;
+
+}
+
+.log-in:hover{
+background-color: green;
+color: white;
 }
 
 .other {
@@ -126,6 +132,7 @@ button {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+
 }
 
 .btn-frgtpass {
@@ -137,9 +144,18 @@ button {
   background: #ed3535;
   color: #fff;
   padding: 1rem;
+  border-radius: 10px;
   font-family: 'Roboto Condensed', sans-serif;
 }
-
+#forgot{
+  border-radius: 10px;
+}
+.btn-sign-up:hover{
+  background-color: lightgreen;
+}
+#forgot:hover{
+  background-color:lightgreen;
+}
 button:hover {
   transform: translatey(3px);
   box-shadow: none;
